@@ -1,0 +1,10 @@
+$primary-color : #4d4d4d;
+$yellow-active : #ffd500;
+$grey-color : #666870;
+$grey-hover : #F1F3F4;
+$bg-content : #ececec;
+
+
+@mixin  transition-ease {
+    transition: all 0.2s ease-in-out;
+}

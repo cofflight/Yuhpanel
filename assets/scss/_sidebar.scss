@@ -1,0 +1,93 @@
+.sidebar-menu {
+    padding: 0;
+    padding-right: 15px;
+
+    &__group {
+        padding: 4px 15px;
+        border-radius: 0 25px 25px 0;
+        display: block;
+        margin-bottom: 0.3em;
+
+        &:hover {
+            background-color: $grey-hover;
+
+        }
+
+        &.active {
+            background-color: $yellow-active;
+
+            & path {
+                color: $primary-color;
+            }
+
+            .sidebar-menu__title {
+                color: $primary-color;
+            }
+        }
+    }
+
+    &__title {
+        vertical-align: middle;
+        font-size: 1.02em;
+        color: $grey-color;
+        font-weight: 500;
+        padding-left: 1em;
+    }
+
+    &__icon {
+        color: $grey-color;
+        vertical-align: top;
+
+        & svg {
+            width: 1.05em;
+            height: 1.05em;
+        }
+    }
+    &__heading{
+        display: block;
+        padding: 4px 15px;
+        font-weight: 600;
+        font-size: 1em;
+        margin-bottom: 0.3em;
+        margin-top: 0.5em;
+    }
+    &__collapse--icon{
+        & svg{
+            vertical-align: middle;
+            width: 0.8em;
+            height: 0.8em;
+            color: $grey-color;
+            @include transition-ease;
+        }
+    }
+    & .icon-rotate svg{
+        
+        transform: rotate(90deg);
+        @include transition-ease;
+        
+        
+    }
+
+}
+
+.sidebar-submenu{
+    padding-left: 2em;
+    &__group{
+        color: $primary-color;
+        &:hover{
+            color: #17bfdd;
+        }
+    }
+
+    &__icon svg{
+        width: 0.9em;
+        height: 0.9em;
+    }
+    &__title{
+        vertical-align: middle;
+        padding-left: 0.5em;
+        font-size: 0.9em;
+        
+    }
+    
+}

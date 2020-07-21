@@ -1,0 +1,16 @@
+@import 'dashboard';
+
+.content-area{
+    background-color: $bg-content;
+    padding: 1.4em;
+    padding-top: 0.7em;
+}
+.content-menu{
+    padding: 0.4em;
+    &__title p{
+        margin: 0;
+        vertical-align: baseline;
+        font-size: 1.4em;
+        font-weight: 400;
+    }
+}
