@@ -97,6 +97,12 @@ body, html {
   font-size: 0.9em;
 }
 
+@media only screen and (max-width: 600px) {
+  .sidebar-menu {
+    display: none;
+  }
+}
+
 .content-area {
   background-color: #ececec;
   padding: 1.4em;
